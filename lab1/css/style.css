@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+ 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+ 
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  /* background-color: #333; */
+  font-weight: 300;
+  line-height: 1.6; 
+}
+ 
+.container {
+  width: 70%;
+  margin: 2rem auto; 
+}
+ 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  /* grid-gap: 1.5rem;  */
+}
+.gallery__item--4 > .ikon {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) ;
+    grid-template-rows: repeat(2, 1fr);
+} 
+.ikon_img {
+  width: 10%;
+  height: 10%;
+  object-fit: cover;
+  display: block; 
+}
+.ikon__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #1F1A1A;
+}
+.ikon__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #410707;
+}
+.ikon__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #b15c5c;
+}
+ 
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+.gallery__a{
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+    display: block; 
+}
+ 
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: #1F1A1A;
+
+}
+ 
+.gallery__item--2 {
+  grid-column-start: 4;
+  grid-column-end: 20;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
+ 
+.gallery__item--3 {
+  grid-column-start: 13;
+  grid-column-end: 20;
+  grid-row-start: 6;
+  grid-row-end: 10;
+
+}
+ 
+.gallery__item--4 {
+  grid-column-start: 14;
+  grid-column-end: 19;
+  grid-row-start: 10;
+  grid-row-end: 11;
+ 
+    background-color: brown;
+}
+ 
+/* .gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+ 
+
+}
+ 
+.gallery__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+ 
+ 
+}  */

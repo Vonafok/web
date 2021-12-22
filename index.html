@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>ГАЛЕРЕЯ</title>
+</head>
+<body class="lock-padding">
+    <div class="wrapper">
+        <div class="header">
+            <img src="images/logo.png"  alt="Logo" class="header__logo">
+            <div class="header__title">ГАЛЕРЕЯ</div>
+            <div class="header__navigation">
+                <button href="#authorization" class="header__button popup-link">Войти</button>
+                <button href="#registration" class="header__button popup-link">Зарегистрироваться</button>
+            </div>
+        </div>
+        <div class="main">
+            <img src="images/prev.png" alt="prev" class="main__photo">
+            <img src="images/1.jpg" alt="Bergen" class="main__photo">
+            <img src="images/2.jpg" alt="Forest" class="main__photo">
+            <img src="images/3.jpg" alt="House" class="main__photo">
+            <img src="images/4.jpg" alt="Ocean" class="main__photo">
+            <img src="images/5.jpg" alt="Ocean and clouds" class="main__photo">
+            <img src="images/6.jpg" alt="Osen" class="main__photo">
+            <img src="images/7.jpg" alt="Park" class="main__photo">
+        </div>
+        <div class="footer">
+            <div class="footer__social-block">
+                <p class="social-box">
+                    <a class="social" href="mailto: mrshapca@mail.ru">
+                     <img class="social-picture" src="images/e-mail.png" alt="e-mail">
+                    </a>
+                  </p>
+                  <p class="social-box">
+                      <a class="social" href="https://www.facebook.com/profile.php?id=100069560648048" target="blank">
+                       <img class="social-picture" src="images/facebook.png" alt="Facebook">
+                      </a>
+                    </p>
+                    <p class="social-box">
+                      <a class="social" href="tel: +79103518109">
+                       <img class="social-picture" src="images/phone.svg" alt="Phone">
+                      </a>
+                    </p>
+                    <p class="social-box">
+                      <a class="social" href="https://t.me/Phoenix_run" target="blank">
+                       <img class="social-picture" src="images/telegram.svg" alt="Telegram">
+                      </a>
+                    </p>
+                  <p class="social-box">
+                      <a class="social" href="https://vk.com/id470584378" target="blank">
+                       <img class="social-picture" src="images/Vk.png" alt="VKontakte">
+                      </a>
+                    </p>
+                    <span class="footer__copyriting">© Copyriting 2021</span>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div id="authorization" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup">X</a>
+                <div class="popup__title">Вход</div>
+                <div class="popup__form">
+                    <form action="#" class="auth" id="auth">
+                        <input name="UserMail" class="form__input" placeholder="E-mail" type="text" required>
+                        <input name="UserPassword" class="form__input" placeholder="Пароль" type="password" required>
+                        <input type="submit" class="form__button login-button" value="Войти">
+                        <button class="form__button header__link popup-link" href="#registration">
+                            Перейти к регистрации
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="registration" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup">X</a>
+                <div class="popup__title">Регистрация</div>
+                <div class="popup__form">
+                    <form action="#" class="registration" id="registration">
+                        <input name="UserName" class="form__input" placeholder="Имя" type="text">
+                        <input name="UserMail" class="form__input" placeholder="E-mail" type="text">
+                        <input name="UserPhone" class="form__input" placeholder="Телефон" type="text">
+                        <input name="UserPassword" class="form__input" placeholder="Пароль" type="password">
+                        <input name="UserRepeatPassword" class="form__input" placeholder="Повторите пароль" type="password">
+                        <span><input name="agreement" class="form__checkbox" type="checkbox" value="true" required>Я принимаю условия политики конфеденциальности</span>
+                        <input type="submit" class="form__button registration-button" value="Зарегистрироваться">
+                        <button class="form__button header__link popup-link" href="#authorization">Перейти к авторизации</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/animation.js"></script>
+</body>
+</html>
